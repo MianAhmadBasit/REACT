@@ -2,6 +2,7 @@ import { createReducer } from '@reduxjs/toolkit';
 
 const initialState = {
     c: 0,
+    
 };
 
 export const customReducer = createReducer(initialState, (builder) => {
@@ -15,4 +16,5 @@ export const customReducer = createReducer(initialState, (builder) => {
        .addCase('decrement', (state) => {
             state.c -= 1;
         });
+        
 });
